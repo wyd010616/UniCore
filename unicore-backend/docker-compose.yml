@@ -1,0 +1,43 @@
+version: '3'
+
+services:
+  mysql:
+    image: 'mysql:latest'
+    container_name: unicore_mysql
+    volumes:
+      - ./pkg/configs/sql:/docker-entrypoint-initdb.d
+      - ./pkg/data/sql:/var/lib/mysql
+    ports:
+      - "18001:3306"
+    environment:
+      MYSQL_DATABASE: unicore
+      MYSQL_USER: unicore
+      MYSQL_PASSWORD: unicorepwd
+      MYSQL_ROOT_PASSWORD: rootpwd
+    restart: always
+
+#  redis:
+#    image: redis:7
+#    container_name: unicore_redis
+#    ports:
+#      - "18002:6379"
+#    volumes:
+#      - ./pkg/configs/redis/redis.conf:/usr/local/etc/redis/redis.conf
+#      - ./pkg/data/redis/:/data
+#    command: redis-server /usr/local/etc/redis/redis.conf
+#    restart: always
+
+  unicore:
+    build:
+      context: ./
+      dockerfile: ./docker-build/Dockerfile
+    extra_hosts:
+      - "host.docker.internal:host-gateway"   
+    container_name: unicore-backend
+    ports:
+      - "18000:8080"
+    depends_on:
+      - mysql
+#      - redis
+    restart: always
+
