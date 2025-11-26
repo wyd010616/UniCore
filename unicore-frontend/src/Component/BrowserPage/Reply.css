@@ -1,0 +1,48 @@
+.container-reply {
+    padding: 15px; /* 增加内边距以适应按钮 */
+    position: relative; /* 相对定位，以便内部的时间可以绝对定位 */
+    margin-bottom: 10px; /* 调整回复间的间距 */
+  }
+  
+  .reply-id,
+  .reply-content {
+    margin: 0 0 10px 0; /* 在元素之间添加垂直间距 */
+  }
+  
+  .reply-id {
+    font-size: 0.9em; /* 调整字号大小 */
+    color: #555; /* 调整字体颜色以匹配设计 */
+  }
+
+  .reply-school {
+    font-size: 0.8em; /* 调整字号大小 */
+    color: #555; /* 调整字体颜色以匹配设计 */
+    position: absolute; /* 绝对定位时间到顶部右侧 */
+    top: 15px; /* 根据需要调整 */
+    right: 300px; /* 根据需要调整 */
+  }
+  
+  .reply-content {
+    font-size: 1em; /* 调整字号大小 */
+    font-weight: bold; /* 如果昵称和内容需要加粗 */
+  }
+  
+  .reply-time {
+    font-size: 0.8em; /* 调整字号大小 */
+    color: #555; /* 调整字体颜色以匹配设计 */
+    position: absolute; /* 绝对定位时间到顶部右侧 */
+    top: 15px; /* 根据需要调整 */
+    right: 15px; /* 根据需要调整 */
+  }
+  
+  relpy.button {
+    background-color: #eee; /* 设置按钮的背景颜色 */
+    border: 1px solid #ddd; /* 设置按钮的边框样式 */
+    border-radius: 5px; /* 设置按钮的边框圆角 */
+    padding: 10px 15px; /* 设置按钮的内边距 */
+    margin: 0 5px; /* 设置按钮之间的间距 */
+    cursor: pointer; /* 设置鼠标悬停时的样式为手型 */
+    font-size: 16px; /* 设置按钮文本的字体大小 */
+    font-weight: bold; /* 设置按钮文本加粗 */
+    color: #333; /* 设置按钮文本的颜色 */
+}

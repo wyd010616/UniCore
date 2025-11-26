@@ -1,0 +1,44 @@
+.container-bp{
+  overflow: auto;
+  background-color: rgb(224, 247, 250);
+  height: 100vh;
+}
+
+.main-bp {
+    /* padding-top: 100px; */
+    /* margin-top: 1em; */
+    
+    flex-direction: column; /* 子元素垂直排列 */
+    flex-grow: 1;
+    display: flex; /* This needs to be flex for the child to grow */
+    align-items: center; 
+    justify-content: center;
+  }
+
+  .main-bp > :first-child {
+    margin-top: 1em;
+  }
+
+  .posts{
+    align-self: flex-start;
+  }
+
+  .btn-load {
+    display: center;
+    font-family: 'Impact';
+    color: rgba(1, 111, 160, 0.7);
+    /* font-weight: bold; */
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    /* border-radius: 4px; */
+    cursor: pointer;
+    font-size: 20px; /* button typography */
+    align-self: center;
+  }
+  
+  .btn-load:hover {
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  

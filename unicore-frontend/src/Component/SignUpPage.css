@@ -1,0 +1,100 @@
+.container-su {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+    min-height: 100vh; /* Make sure the container fills the viewport height */
+  }
+  
+  .main-su {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 200px); /* Adjust height based on header size */
+  }
+  
+  .set-email, .set-pswd, .vrf-email {
+    background-color: #ffffff;
+    padding: 2em;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px; /* Adjust based on your preference */
+  }
+
+  .su-suc {
+    background-color: #ffffff;
+    padding: 2em;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px; /* Adjust based on your preference */
+    flex-direction: column;
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center the content horizontally */
+  }
+
+  
+  h1 { /* email address*/
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  label {
+    font-family: 'Poppins', sans-serif;
+    align-self: flex-start;
+    margin-bottom: 0.5em;
+  }
+  
+  input[type=email] {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  input[type=password] {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  input[type=text] {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .backnext{
+    display: flex;          /* Establishes a flex container */
+    justify-content: space-between;  /* Spaces out children to the ends */
+    background-color: transparent;   /* Ensures there is no background color */
+    padding: 0;  
+  }
+
+  .back{
+    margin-right: 90px;
+  }
+  
+  .btnsu-su, .btnsu-si, .back, .next {
+    flex: 1;
+    padding: 0.5em 1em;
+    background-color: black;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btnsu-su, .btnsu-si, .back, .next:hover {
+    background-color: #333333;
+  }
+  

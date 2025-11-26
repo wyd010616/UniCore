@@ -1,0 +1,53 @@
+.container-pp {
+    align-items: center;
+    color: #e0f7fa;
+    height: 100vh;
+    /* padding: 16px; */
+    /* box-sizing: border-box; 防止padding影响高度计算 */
+  }
+  
+  .main-pp {
+    /* width: 100%; */
+    margin: 10; 
+    flex-direction: column; /* 子元素垂直排列 */
+    flex-grow: 1;
+    display: flex; /* This needs to be flex for the child to grow */
+  }
+
+  .input-pp {
+    width: 100%; /* Make the input full width */
+    height: 70vh;
+    border: none; /* 移除边框 */
+    outline: none; /* 移除聚焦时的轮廓 */
+    padding: 1em; /* 或根据需要调整内边距 */
+    background: transparent; /* Makes the background transparent */
+    font-size: 1rem; /* Adjust font-size as needed */
+  }
+
+  .input-pp::placeholder {
+    font-family: 'Raleway';
+    color: rgba(1, 111, 160, 0.5);
+    text-align: center; /* Center horizontally */
+    line-height: 200px; /* Use the same height as your input element if it's fixed */
+    font-size: 20px;
+  }
+
+  .btn-post {
+    display: center;
+    font-family: 'Impact';
+    color: rgba(1, 111, 160, 0.7);
+    /* font-weight: bold; */
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    /* border-radius: 4px; */
+    cursor: pointer;
+    font-size: 20px; /* button typography */
+    align-self: center;
+  }
+  
+  .btn-post:hover {
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  

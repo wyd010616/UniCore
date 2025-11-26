@@ -1,0 +1,32 @@
+.container-replyinput{
+    display: flex; /* Use flexbox to align children */
+    align-items: center; /* Vertically center align-items in the container */
+    justify-content: center; /* Horizontally center the items */
+}
+
+.btnrplyinput-submit {
+    align-self: flex-end;
+    font-family: 'Impact';
+    color: rgba(1, 111, 160, 0.55);
+    background-color: transparent;
+    border: 1px solid #ddd; /* 设置按钮的边框样式 */
+    border-radius: 5px; /* 设置按钮的边框圆角 */
+    padding: 10px 15px; /* 设置按钮的内边距 */
+    margin: 0 5px; /* 设置按钮之间的间距 */
+    cursor: pointer; /* 设置鼠标悬停时的样式为手型 */
+    font-size: 16px; /* 设置按钮文本的字体大小 */
+    /* font-weight: bold;  */
+    /* color: #333; 设置按钮文本的颜色 */
+}
+
+.btnrplyinput-submit:hover{
+    background-color: hwb(0 93% 7% / 0.5);
+    text-decoration: underline;
+}
+
+.input-reply{
+    margin-top: 15px;
+    margin-right: 8px; /* Give some space between the input and the button */
+    width: calc(100% - 100px); /* Adjust width as needed to fit the button */
+    height: 3pc;
+}

@@ -1,0 +1,31 @@
+.MainHomeHeader {
+    display: flex;
+    align-items: center; /* center align children vertically */
+    justify-content: space-between; /* even spatial distribution among children */
+    padding: 1em;
+    /* background-color: #e0f7fa; */
+  }
+  
+  .Homelogo {
+    display: flex;
+    align-self: flex-start;
+    border: none;
+    font-family: 'Bungee Inline';
+    /* color: #016FA0; */
+    color: rgba(1, 111, 160, 0.56);
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  .Homelogo:hover {
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  .HomeNav a {
+    margin: 0 1em;
+    text-decoration: underline;
+    font-family: 'Impact';
+    color: rgba(1, 111, 160, 0.56);
+  }

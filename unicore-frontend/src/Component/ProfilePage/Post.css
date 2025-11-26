@@ -1,0 +1,23 @@
+.likes-container {
+  padding: 20px;
+}
+
+.post {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.post-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-info h3 {
+  margin: 0 0 5px 0;
+}
+
+.post-info p {
+  margin: 0;
+}

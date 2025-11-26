@@ -1,0 +1,87 @@
+.container-home {
+    min-height: 100vh; /* make sure that container covers at least the full viewport height */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+  }
+  
+  main {
+    padding: 2em;
+  }
+  
+  h1 .part1{
+    font-family: 'Poppins';
+    color: rgba(1, 111, 160, 0.9);
+    font-weight: bold;
+    font-size: 64px;
+  }
+  
+  h1 .part2 {
+    /* display: block; dispaly in a new line */
+    font-family: 'HGKY_CNKI';
+    color: rgb(0, 170, 170, 0.66);
+    font-weight: bold;
+    font-size: 64px;
+  }
+
+  p {
+    font-family: 'Raleway';
+    color: rgb(31, 107, 140, 0.66);
+    font-weight: bold;
+    font-size: 21px;
+  }
+  p .part2{
+    display: block; /* dispaly in a new line*/
+    /* font-family: 'Raleway';
+    color: #1F6B8C;
+    font-weight: bold;
+    font-size: 21px; */
+  }
+  
+  /* shared style*/
+  .buttons button {
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    border: none;
+    /* background-color: #4db6ac; */
+    /* color: #016FA0; */
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .learn-more{
+    font-family: 'Montserrat', sans-serif; 
+    background-image: linear-gradient(to right, #2A6FF6, #0ABEBE); /* gradient background color */
+    color: white; 
+    width: 220px; 
+    height: 36px; 
+    border: #F3F3F3; 
+    border-radius: 10px; 
+    display: inline-block; /* active width&height */
+    text-align: center; 
+    line-height: 10px; 
+    cursor: pointer; 
+  }
+
+  .si-btn{
+    margin: 0 1em;
+    text-decoration: underline;
+    font-family: 'Impact';
+    color: rgba(1, 111, 160, 0.56);
+    background-color: transparent;
+  }
+
+  .su-btn{
+    margin: 0 1em;
+    text-decoration: underline;
+    font-family: 'Impact';
+    color: rgba(1, 111, 160, 0.56);
+    background-color: transparent;
+  }
+
+  .buttons button:hover {
+    /* color: #e1f4fa; */
+    text-decoration: none;
+    background-color: transparent;
+  }
+  
